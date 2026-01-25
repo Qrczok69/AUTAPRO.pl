@@ -1,8 +1,8 @@
 <section id="baza-aut" class="section-padding vehis-section">
     <div class="container">
         <div class="text-center">
-            <h2 style="color: <?= COLOR_NAVY ?>; font-size: 32px;">Baza dostępnych aut</h2>
-            <p style="color: #666; margin-bottom: 20px;">Wybierz samochód, a my zajmiemy się resztą.</p>
+            <h2 style="color: <?= COLOR_NAVY ?>; font-size: 32px;">Wyszukiwarka samochodów</h2>
+            <p style="color: #666; margin-bottom: 20px;">Przeglądaj dostępne modele i od razu przejdź do finansowania.</p>
         </div>
 
         <div class="vehis-container">
@@ -12,6 +12,9 @@
                 }(document, window, null, 'v-embed', null);
             </script>
         </div>
-        
+        <div class="section-cta">
+            <a href="#kalkulator" class="btn btn-primary">Sfinansuj wybrany pojazd</a>
+            <span>Podpowiemy najlepszą formę finansowania w 30 minut.</span>
+        </div>
     </div>
 </section>
