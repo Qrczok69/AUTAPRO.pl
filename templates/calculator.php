@@ -9,19 +9,21 @@
             <form id="calcForm">
                 <div class="form-group">
                     <label>Wartość pojazdu (zł)</label>
-                    <input type="number" id="carValue" value="50000" min="10000" max="1000000">
+                    <input class="form-control" type="number" id="carValue" value="90000" min="10000" max="1000000">
                 </div>
                 <div class="form-group">
-                    <label>Wpłata własna (%)}}</label>
-                    <input type="number" id="downPayment" value="10" min="0" max="50">
+                    <label>Wpłata własna (%)</label>
+                    <input class="form-control" type="number" id="downPayment" value="10" min="0" max="50">
                 </div>
                 <div class="form-group">
                     <label>Okres (miesiące)</label>
-                    <select id="period">
+                    <select id="period" class="form-control">
                         <option value="24">24 miesiące</option>
                         <option value="36" selected>36 miesięcy</option>
                         <option value="48">48 miesięcy</option>
                         <option value="60">60 miesięcy</option>
+                        <option value="72">72 miesiące</option>
+                        <option value="84">84 miesiące</option>
                     </select>
                 </div>
                 <button type="button" onclick="calculate()" class="btn btn-primary" style="width: 100%;">Oblicz ratę</button>
@@ -31,6 +33,7 @@
                 <h3>Szacunkowa rata miesięczna:</h3>
                 <p class="rate-amount"><span id="monthlyRate">0</span> zł netto</p>
                 <small>*Kalkulacja ma charakter orientacyjny</small>
+                <a href="#kontakt" class="btn btn-outline" style="margin-top: 20px;">Zapytaj o dokładną wycenę</a>
             </div>
         </div>
     </div>
